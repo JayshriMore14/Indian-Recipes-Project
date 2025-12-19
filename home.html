@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Recipes</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Century, Arial, sans-serif;
+        }
+
+        header {
+            height: 100vh;
+            background-image:
+                linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url(food/dish.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* Top bar: logo + title */
+        .top-left {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .top-left img {
+            width: 130px;
+        }
+
+        .top-left h1 {
+            color: #fff;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+
+        /* Navigation */
+        nav {
+            position: absolute;
+            top: 25px;
+            right: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 5px 12px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li.active a {
+            background: #fff;
+            color: #000;
+        }
+
+        /* Recipes center */
+        .recipes {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .recipes ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        .recipes li {
+            margin: 12px 0;
+        }
+
+        .button1 {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 14px 30px;
+            text-decoration: none;
+            font-size: 16px;
+            width: 260px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .button1:hover {
+            background-color: #e80d0d;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <!-- Logo + Title -->
+    <div class="top-left">
+        <img src="logo/logo.png" alt="Logo">
+        <h1>INDIAN RECIPES</h1>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <!-- Recipes -->
+    <div class="recipes">
+        <ul>
+            <li><a href="maharastrian.html" class="button1">Maharashtrian Recipes</a></li>
+            <li><a href="south.html" class="button1">South Indian Recipes</a></li>
+            <li><a href="gujrati.html" class="button1">Gujarati Recipes</a></li>
+            <li><a href="punjabi.html" class="button1">Punjabi Recipes</a></li>
+        </ul>
+    </div>
+
+</header>
+
+</body>
+</html>
